@@ -86,7 +86,12 @@
   
 }
 
+@media only screen and (max-width: 950px) {
 
+  .anime-card{
+    max-width: none;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .anime-card > .error-image-poster {

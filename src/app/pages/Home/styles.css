@@ -49,6 +49,31 @@
   gap: 25px;
   margin-top: 30px;
 }
+@media only screen and (max-width: 950px) {
+
+  .container-trend-anime{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px ;
+
+
+  }  
+input{
+  min-width: 100px;
+}
+
+.btn-signOut{
+  margin-left: -22px;
+}
+.btn-logIn{
+  margin-left: 25px;
+}
+}
 @media only screen and (max-width: 768px) {
   .container-trend-anime{
     display: flex;
@@ -63,6 +88,7 @@
     display: none;
   }
 }
+
 @media only screen and (max-width: 500px) {
 #logo{
   display: none;
