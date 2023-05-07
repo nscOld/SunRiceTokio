@@ -1,0 +1,82 @@
+.container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 27px;
+  animation: fade-in-top 1s ease forwards;
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+.title > strong {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.animes-container {
+  margin: 0 auto;
+  max-width: 1440px ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+.container-trend-anime{
+  margin: 0 auto;
+  max-width: 1440px ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .container-trend-anime{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  
+  }
+  .btn{
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+#logo{
+  display: none;
+}
+input{
+  min-width: 100px;
+}
+.navbar-links{
+  gap: 15px;
+}
+.btn-signOut{
+  margin-left: -7px;
+}
+.btn-logIn{
+  margin-left: 25px;
+}
+}

@@ -1,0 +1,49 @@
+:root {
+  --navbar-background: #191919;
+  --primary-color: #7a7a7a;
+  --secondary-color: #d6d6d6;
+
+	--background-dark:  #262626;
+  --text-color-dark: #fff;
+
+  --background-light: #f2f2f2;
+  --text-color-light: #000000;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+*::selection{
+  color:#b0adc7;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+/* style */
+body.dark {
+  color: var(--text-color-dark);
+  background-image: radial-gradient(circle, #303234, #252829, #1b1e1e, #121512, #050601);
+}
+
+body.light {
+  color: var(--text-color-light);
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);;
+}
